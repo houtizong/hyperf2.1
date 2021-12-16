@@ -5,35 +5,40 @@ hyperf2.1框架学习体验，开发的社区博客
 线上体验地址：http://blog.zongscan.com/
 
 
-#### 软件架构
-软件架构说明
+# Introduction
 
+This is a skeleton application using the Hyperf framework. This application is meant to be used as a starting place for those looking to get their feet wet with Hyperf Framework.
 
-#### 安装教程
+# Requirements
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Hyperf has some requirements for the system environment, it can only run under Linux and Mac environment, but due to the development of Docker virtualization technology, Docker for Windows can also be used as the running environment under Windows.
 
-#### 使用说明
+The various versions of Dockerfile have been prepared for you in the [hyperf\hyperf-docker](https://github.com/hyperf/hyperf-docker) project, or directly based on the already built [hyperf\hyperf](https://hub.docker.com/r/hyperf/hyperf) Image to run.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+When you don't want to use Docker as the basis for your running environment, you need to make sure that your operating environment meets the following requirements:  
 
-#### 参与贡献
+ - PHP >= 7.2
+ - Swoole PHP extension >= 4.4，and Disabled `Short Name`
+ - OpenSSL PHP extension
+ - JSON PHP extension
+ - PDO PHP extension （If you need to use MySQL Client）
+ - Redis PHP extension （If you need to use Redis Client）
+ - Protobuf PHP extension （If you need to use gRPC Server of Client）
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+# Installation using Composer
 
+The easiest way to create a new Hyperf project is to use Composer. If you don't have it already installed, then please install as per the documentation.
 
-#### 特技
+To create your new Hyperf project:
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+$ composer create-project hyperf/hyperf-skeleton path/to/install
+
+Once installed, you can run the server immediately using the command below.
+
+$ cd path/to/install
+$ php bin/hyperf.php start
+
+This will start the cli-server on port `9501`, and bind it to all network interfaces. You can then visit the site at `http://localhost:9501/`
+
+which will bring up Hyperf default home page.
+
