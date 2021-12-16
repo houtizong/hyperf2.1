@@ -1,0 +1,23 @@
+.h-headimg{
+    width: 35px;
+    padding-right: 5px;
+    display: -webkit-inline-box;
+    border-radius: 50%;
+}
+
+.h-clear{
+    height: 1rem;
+}
+
+.h-block{
+    padding: 10px;
+    border: 1px solid #d2d6dc;
+}
+
+p{padding: 5px 20px 5px 20px;}
+
+
+#tagbox{position:relative;left:-20px;height:250px;}
+#tagbox a{position:absolute;font-family:Microsoft YaHei;color:#555;TOP:0px;font-weight:bold;text-decoration:none;left:0px}
+#tagbox a:hover{border:#eee 1px solid;background:#000;}
+
